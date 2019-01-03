@@ -23,7 +23,7 @@ export class ProductService {
         releasedDate: "Dec 31, 2016",
         description: "Cras sit amet nibh libero, in gravida...",
         rating: 5,
-        numOfReviews: 8
+        numOfReviews: 9
       }
     ];
   }

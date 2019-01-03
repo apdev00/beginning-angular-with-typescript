@@ -1,5 +1,6 @@
-<i class="fas" [class.fa-arrow-up]="rating >= 1" [class.fa-arrow-down]="rating < 1"(click)="onClick(1)"></i>
-<i class="fas" [class.fa-arrow-up]="rating >= 2" [class.fa-arrow-down]="rating < 2"(click)="onClick(2)"></i>
-<i class="fas" [class.fa-arrow-up]="rating >= 3" [class.fa-arrow-down]="rating < 3"(click)="onClick(3)"></i>
-<i class="fas" [class.fa-arrow-up]="rating >= 4" [class.fa-arrow-down]="rating < 4"(click)="onClick(4)"></i>
-<i class="fas" [class.fa-arrow-up]="rating >= 5" [class.fa-arrow-down]="rating < 5"(click)="onClick(5)"></i>
+<i class="fa-star" [class.fas]="rating >= 1" [class.far]="rating < 1"(click)="onClick(1)"></i>
+<i class="fa-star" [class.fas]="rating >= 2" [class.far]="rating < 2"(click)="onClick(2)"></i>
+<i class="fa-star" [class.fas]="rating >= 3" [class.far]="rating < 3"(click)="onClick(3)"></i>
+<i class="fa-star" [class.fas]="rating >= 4" [class.far]="rating < 4"(click)="onClick(4)"></i>
+<i class="fa-star" [class.fas]="rating >= 5" [class.far]="rating < 5"(click)="onClick(5)"></i>
+{{ numOfReviews }}

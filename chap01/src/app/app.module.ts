@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products.component';
 import { RatingComponent } from './rating.component';
 import { ProductComponent } from './product.component';
+import { TruncatePipe } from './truncate.pipe';
+import { JumbotronComponent } from './bs-jumbotron.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     RatingComponent,
-    ProductComponent
+    ProductComponent,
+    TruncatePipe,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule,

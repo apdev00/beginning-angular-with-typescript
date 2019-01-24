@@ -1,6 +1,8 @@
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class GitHubService {
   constructor(private _http: Http) {
 

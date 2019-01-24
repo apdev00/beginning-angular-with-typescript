@@ -1,25 +1,19 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Observable } from 'rxjs/Rx';
+//import { Observable } from 'rxjs/Rx';
 import { GitHubService } from './github.service';
-//import { ProductsService } from './products.service';
 import { ProductService } from './product.service';
-//import { OnInit } from '@angular/core';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app2.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'github',
+  templateUrl: './github.component.html',
   providers: [ProductService, GitHubService]
 })
-export class AppComponent {
 
-  title: string = 'First Angular App!';
-  subTitle = 'another title!';
-  imageUrl = 'https://www.w3schools.com/html/pic_mountain.jpg';
+export class GitHubComponent {
   isValid = true;
   searchControl = new FormControl();
   isLoading = true;
@@ -28,7 +22,6 @@ export class AppComponent {
   constructor(private _gitHubService: GitHubService) {
 
   }
-
 
   ngOnInit() {
 
@@ -42,13 +35,7 @@ export class AppComponent {
         .subscribe(data => {
           this.isLoading = false;
           this.users = data.items;
-          //console.log(data.items);
         });
       });
-  }
-
-  onClickMe($event){
-    console.log('clicked!', $event);
-    alert('clicked: ' + $event.srcElement.id);
   }
 }

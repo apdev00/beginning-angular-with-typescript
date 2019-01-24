@@ -11,7 +11,7 @@ import 'rxjs/add/operator/distinctUntilChanged';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app2.component.html',
+  templateUrl: './app3.component.html',
   styleUrls: ['./app.component.css'],
   providers: [ProductService, GitHubService]
 })

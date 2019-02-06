@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { PasswordValidator } from './passwordValidator';
+import { PasswordValidator } from '../passwordValidator';
 import { LoginService } from './login.service';
 
 @Component({

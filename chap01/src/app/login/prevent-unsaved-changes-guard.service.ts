@@ -1,5 +1,5 @@
 import { CanDeactivate } from '@angular/router';
-import { LoginComponent } from './login.component';
+import { LoginComponent } from './login/login.component';
 
 export class PreventUnsavedChangesGuard implements CanDeactivate<LoginComponent> {
 

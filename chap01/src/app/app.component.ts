@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs/Rx';
-import { GitHubService } from './github.service';
+import { GitHubService } from './github/github.service';
 //import { ProductsService } from './products.service';
 import { ProductService } from './product.service';
 //import { OnInit } from '@angular/core';

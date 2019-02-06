@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 //import { Observable } from 'rxjs/Rx';
 import { GitHubService } from './github.service';
-import { ProductService } from './product.service';
+import { ProductService } from '../product.service';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
